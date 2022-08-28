@@ -1,0 +1,32 @@
+.empty_contacts{
+    text-align: center;
+    &__black_hole{
+        max-width: 200px;
+        -webkit-animation: blackHoleRotation 2s linear infinite;
+        -moz-animation: blackHoleRotation 2s linear infinite;
+        -ms-animation: blackHoleRotation 2s linear infinite;
+        -o-animation: blackHoleRotation 2s linear infinite;
+        animation: blackHoleRotation 2s linear infinite;
+    }
+
+    &__title{
+        color: darkviolet
+    }
+}
+
+@keyframes blackHoleRotation {
+    from {
+        -ms-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -webkit-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+      }
+      to {
+        -ms-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -webkit-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+      }
+}

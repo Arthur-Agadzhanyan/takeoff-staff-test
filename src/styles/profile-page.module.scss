@@ -1,0 +1,20 @@
+.profile_page{
+    background: #fff;
+    padding: 32px;
+    min-height: 100%;
+    border-radius: 4px;
+
+    @media (max-width: 600px) {
+        padding: 20px;
+    }
+}
+
+.profile_page__mobile_exit{
+    display: none;
+
+    @media (max-width: 550px ) {
+        display: block;
+        width: 100vw;  
+        border-radius: 0px; 
+    }
+}

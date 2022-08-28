@@ -1,0 +1,81 @@
+.profile_form{
+    margin-bottom: 40px;
+
+    &__name{
+        max-width: 70%;
+        width: 100%;
+        margin-bottom: 40px;
+        @media screen and (max-width: 1600px) {
+            max-width: 85%;
+        }
+        @media screen and (max-width: 1500px) {
+            max-width: 100%;
+        }
+    }
+
+    &__phone_input{
+        display: flex;
+        align-items: center;
+        margin-bottom: 40px;
+
+        :global{
+            .PhoneInputCountry{
+                order: 2;
+                display: flex;
+                align-items: center;
+                select{
+                    cursor: pointer;
+                    margin-right: 10px;
+                    background: rgb(236, 236, 236);
+                    border: none;
+                    outline: none;
+                    border-radius: 15px;
+                    padding: 16px 10px;
+                
+                    font-size: 18px;
+                    order: 2;
+
+                    
+                }
+                .PhoneInputCountryIcon{
+                    width: 80px;
+                    height: 60px;
+                    order: 1;
+                    margin-left: 20px;
+                    margin-right: 20px;
+                }
+
+                @media (max-width: 1300px) {
+                    display: none;
+                }
+            }
+            .PhoneInputInput{
+                order: 1;
+                max-width: 400px;
+                width: 100%;
+                @media (max-width: 1300px) {
+                    max-width: initial;
+                    width: 100%;
+                }
+                @media (max-width: 450px) {
+                    font-size: 16px;
+                }
+            }
+            .PhoneInputCountryIcon{}
+        }
+        img{
+            max-width: 100px;
+        }
+        input{
+
+            background: rgb(236, 236, 236);
+            border: none;
+            outline: none;
+            border-radius: 15px;
+            padding: 16px 20px;
+            padding-right: 20px;
+        
+            font-size: 18px;
+        }
+    }
+}

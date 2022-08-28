@@ -1,0 +1,20 @@
+.button{
+    font-size: 20px;
+    background: #ffab4a;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .2s linear;
+    font-weight: 600;
+
+    &:hover{
+        background: #202020;
+        color: #ffab4a
+    }
+
+    @media (max-width: 450px) {
+        font-size: 16px;
+    }
+    
+}
