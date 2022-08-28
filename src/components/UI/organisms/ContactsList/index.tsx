@@ -1,8 +1,6 @@
 import { Contact } from '@/components/pages/Profile'
-import React, { memo } from 'react'
-import Loader from '@atoms/Loader'
+import { memo } from 'react'
 import ContactsItem from '@molecules/ContactsItem'
-import EmptyContacts from '@molecules/EmptyContacts'
 
 import styles from './contacts-list.module.scss'
 

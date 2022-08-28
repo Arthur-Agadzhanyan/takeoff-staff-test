@@ -1,7 +1,6 @@
 import React from 'react'
 import BaloonImage from "@assets/auth-page/baloon.png"
 import styles from "@styles/auth-page.module.scss"
-import { Link } from "react-router-dom"
 import GoogleIcon from "@assets/icons/google.png"
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
 import { auth } from '@/app/firebase'
