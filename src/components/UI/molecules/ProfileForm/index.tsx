@@ -1,8 +1,9 @@
-import { FormValues } from '@/components/pages/Profile'
 import React, { ChangeEvent, useState } from 'react'
 import PhoneInput from 'react-phone-number-input'
-import Button from '../../atoms/Button'
-import TextField from '../../atoms/TextField'
+
+import { FormValues } from '@pages/Profile'
+import Button from '@atoms/Button'
+import TextField from '@atoms/TextField'
 
 import styles from './profile-form.module.scss'
 

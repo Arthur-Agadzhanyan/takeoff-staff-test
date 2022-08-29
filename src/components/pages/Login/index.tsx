@@ -1,16 +1,17 @@
 import React, { ChangeEvent, useState } from 'react'
-import TextField from "@atoms/TextField"
-import styles from "@styles/auth-page.module.scss"
-
-import Button from '@/components/UI/atoms/Button'
 import { Link } from "react-router-dom"
-import AuthPageTemplate from '@/components/templates/AuthPageTemplate'
-import { useAppDispatch } from '@/app/hooks/redux-hooks'
-import { auth } from '@/app/firebase'
-import { signInWithEmailAndPassword } from 'firebase/auth'
-import { setUser } from '@/features/auth/userSlice'
 import { ToastContainer, toast } from 'react-toastify';
+import { signInWithEmailAndPassword } from 'firebase/auth'
+import { useAppDispatch } from '@app/hooks/redux-hooks'
+
+import { auth } from '@app/firebase'
+import AuthPageTemplate from '@/components/templates/AuthPageTemplate'
+import { setUser } from '@/features/auth/userSlice'
+import TextField from "@atoms/TextField"
+import Button from '@atoms/Button'
+
 import 'react-toastify/dist/ReactToastify.css';
+import styles from "@styles/auth-page.module.scss"
 interface Props { }
 
 interface formValues {

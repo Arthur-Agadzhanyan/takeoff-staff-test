@@ -1,15 +1,14 @@
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
+import { signOut } from 'firebase/auth'
 import { auth } from '@/app/firebase'
 import { useAppDispatch, useAppSelector } from '@/app/hooks/redux-hooks'
 import { setUser } from '@/features/auth/userSlice'
-import { signOut } from 'firebase/auth'
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import Button from '../../atoms/Button'
+
+import Button from '@atoms/Button'
 import styles from "./sider.module.scss"
 
-interface Props {}
-
-function Sider(props: Props) {
+function Sider() {
     const dispatch = useAppDispatch()
     const user = useAppSelector(state=>state.user)
     const navigate = useNavigate()

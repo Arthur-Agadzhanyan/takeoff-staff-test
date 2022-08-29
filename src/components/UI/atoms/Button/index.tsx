@@ -1,4 +1,4 @@
-import React, { ButtonHTMLAttributes } from 'react'
+import { ButtonHTMLAttributes } from 'react'
 import styles from './button.module.scss'
 
 interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {

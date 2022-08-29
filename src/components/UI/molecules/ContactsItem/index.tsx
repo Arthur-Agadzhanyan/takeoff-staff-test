@@ -1,7 +1,8 @@
 import React, { ChangeEvent, memo, useState } from 'react'
 import PhoneInput from 'react-phone-number-input'
+
 import TextField from '@atoms/TextField'
-import { Contact } from '@/components/pages/Profile'
+import { Contact } from '@pages/Profile'
 
 import styles from './contacts-item.module.scss'
 

@@ -28,6 +28,7 @@
   "scripts": {
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
+    "serve": "serve -s build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
@@ -52,6 +53,7 @@
   "devDependencies": {
     "react-app-rewire-alias": "^1.1.7",
     "react-app-rewired": "^2.2.1",
-    "sass": "^1.54.5"
+    "sass": "^1.54.5",
+    "serve": "^14.0.1"
   }
 }

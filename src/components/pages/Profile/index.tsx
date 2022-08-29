@@ -1,24 +1,26 @@
 import  { useCallback, useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import { doc, getDoc, setDoc, updateDoc } from 'firebase/firestore'
-import { useAppDispatch, useAppSelector } from '@/app/hooks/redux-hooks'
-import { auth, firestore } from '@/app/firebase'
-import ProfileContent from '@/components/UI/organisms/ProfileContent'
-import { useAuth } from '@/app/hooks/use-auth'
-import Button from '@/components/UI/atoms/Button'
-import { uuidv4 } from '@firebase/util'
-import Loader from '@/components/UI/atoms/Loader'
-import EmptyContacts from '@/components/UI/molecules/EmptyContacts'
-import ProfileForm from '@/components/UI/molecules/ProfileForm'
-import ContactsList from '@/components/UI/organisms/ContactsList'
-import ContactsSearch from '@/components/UI/molecules/ContactsSearch'
-import { ToastContainer, toast } from 'react-toastify';
 import { signOut } from 'firebase/auth'
-import { setUser } from '@/features/auth/userSlice'
+import { uuidv4 } from '@firebase/util'
+import { ToastContainer, toast } from 'react-toastify';
+import { setUser } from '@features/auth/userSlice'
+import { useAppDispatch, useAppSelector } from '@app/hooks/redux-hooks'
+import { auth, firestore } from '@app/firebase'
+import { useAuth } from '@app/hooks/use-auth'
+
+import ProfileContent from '@organisms/ProfileContent'
+import ContactsList from '@organisms/ContactsList'
+
+import EmptyContacts from '@molecules/EmptyContacts'
+import ProfileForm from '@molecules/ProfileForm'
+import ContactsSearch from '@molecules/ContactsSearch'
+
+import Button from '@atoms/Button'
+import Loader from '@atoms/Loader'
 
 import 'react-toastify/dist/ReactToastify.css';
 import styles from '@styles/profile-page.module.scss'
-interface Props {}
 
 export interface Contact {
     id: string,
@@ -31,7 +33,7 @@ export interface FormValues{
     phone:string
 }
 
-function ProfilePage(props: Props) {
+function ProfilePage() {
     const dispatch = useAppDispatch()
     const user = useAppSelector(state=>state.user)
     const {isAuth} = useAuth() 
@@ -73,8 +75,6 @@ function ProfilePage(props: Props) {
             navigate('/login',{replace:true})
         })
     }
-
-    
     
     const addContact = (e:React.FormEvent<HTMLFormElement>)=> async (formValues:FormValues,setFormValues: React.Dispatch<React.SetStateAction<FormValues>>)=>{
         e.preventDefault()

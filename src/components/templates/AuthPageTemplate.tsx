@@ -1,11 +1,13 @@
 import React from 'react'
-import BaloonImage from "@assets/auth-page/baloon.png"
-import styles from "@styles/auth-page.module.scss"
-import GoogleIcon from "@assets/icons/google.png"
 import { GoogleAuthProvider, signInWithPopup } from 'firebase/auth'
-import { auth } from '@/app/firebase'
-import { useAppDispatch } from '@/app/hooks/redux-hooks'
-import { setUser } from '@/features/auth/userSlice'
+
+import { auth } from '@app/firebase'
+import { useAppDispatch } from '@app/hooks/redux-hooks'
+import { setUser } from '@features/auth/userSlice'
+
+import BaloonImage from "@assets/auth-page/baloon.png"
+import GoogleIcon from "@assets/icons/google.png"
+import styles from "@styles/auth-page.module.scss"
 
 interface Props {
     children: React.ReactNode,

@@ -1,15 +1,16 @@
 import React, { ChangeEvent, useState } from 'react'
-import TextField from "@atoms/TextField"
-import Button from '@/components/UI/atoms/Button'
-import { Link } from "react-router-dom"
-import AuthPageTemplate from '@/components/templates/AuthPageTemplate'
 import { createUserWithEmailAndPassword } from 'firebase/auth'
-import { auth } from '@/app/firebase'
-import { setUser } from '@/features/auth/userSlice'
-import { useAppDispatch } from '@/app/hooks/redux-hooks'
 import { ToastContainer, toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
+import { setUser } from '@features/auth/userSlice'
+import { Link } from "react-router-dom"
+import { auth } from '@app/firebase'
 
+import AuthPageTemplate from '@/components/templates/AuthPageTemplate'
+import { useAppDispatch } from '@app/hooks/redux-hooks'
+import TextField from "@atoms/TextField"
+import Button from '@atoms/Button'
+
+import 'react-toastify/dist/ReactToastify.css';
 import styles from "@styles/auth-page.module.scss"
 
 interface Props { }

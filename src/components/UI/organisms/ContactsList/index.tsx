@@ -1,5 +1,5 @@
-import { Contact } from '@/components/pages/Profile'
 import { memo } from 'react'
+import { Contact } from '@pages/Profile'
 import ContactsItem from '@molecules/ContactsItem'
 
 import styles from './contacts-list.module.scss'

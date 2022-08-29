@@ -1,7 +1,9 @@
 import React from 'react'
 import Sider from '@organisms/Sider'
 import Layout from '@atoms/Layout'
+
 import styles from './profile-content.module.scss'
+
 interface Props {
     children: React.ReactNode
 }

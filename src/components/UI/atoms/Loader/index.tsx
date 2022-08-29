@@ -1,9 +1,7 @@
 import React from 'react'
 import styles from './loader.module.scss'
 
-interface Props { }
-
-function Loader(props: Props) {
+function Loader() {
     return (
         <div className={styles.loader}>
             <div className={styles.wrapper}>

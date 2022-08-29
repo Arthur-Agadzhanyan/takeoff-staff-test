@@ -1,6 +1,6 @@
 import React, { ChangeEvent, memo, useState } from 'react'
-import Button from '../../atoms/Button'
-import TextField from '../../atoms/TextField'
+import Button from '@atoms/Button'
+import TextField from '@atoms/TextField'
 
 import styles from './contacts-search.module.scss'
 

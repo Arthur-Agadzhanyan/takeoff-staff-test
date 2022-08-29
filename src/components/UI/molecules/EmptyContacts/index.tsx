@@ -3,9 +3,7 @@ import BlackHoleIcon from '@assets/icons/black_hole.png'
 
 import styles from "./empty-contacts.module.scss"
 
-interface Props {}
-
-function EmptyContacts(props: Props) {
+function EmptyContacts() {
 
     return (
         <div className={styles.empty_contacts}>
