@@ -17,3 +17,5 @@
 ## Посмотреть демо приложения на Netlify
 
 ### https://takeoff-staff-test.netlify.app/
+
+#### Версия node: 16.14.0
